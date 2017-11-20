@@ -5,3 +5,8 @@ It is interesting to consider the difference between having a stereo camera and 
 
 这篇文章没有太多建设性的proposal，针对单目SLAM，它提出了用已知尺度的物体标定来得到绝对尺度的方法。
 没有用速度传感器得到scale。
+
+-----------------------------------------------------------------------------------------------------------
+来源：
+https://robotics.stackexchange.com/questions/11743/scaling-monocular-slam-with-another-source
+该网友尝试了用已知的scale（由双目得到）来标定单目SLAM的方式。他使用的是ORB-SLAM作为单目SLAM
