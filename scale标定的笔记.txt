@@ -9,4 +9,20 @@ It is interesting to consider the difference between having a stereo camera and 
 -----------------------------------------------------------------------------------------------------------
 来源：
 https://robotics.stackexchange.com/questions/11743/scaling-monocular-slam-with-another-source
-该网友尝试了用已知的scale（由双目得到）来标定单目SLAM的方式。他使用的是ORB-SLAM作为单目SLAM
+该网友尝试了用已知的scale（由双目得到）来标定单目SLAM的方式。他使用的是ORB-SLAM作为单目SLAM。代码如下：
+// Start system.
+
+// Store both values as Eigen::Vector3f; 将双目得到的ground truth scale和单目估计的相对scale都保存下来
+
+Eigen::Vector3f initialWrong;
+Eigen::Vector3f initialTruth;
+
+// Sleep the thread for a few seconds, and move the sensors.
+
+// get the distances
+float stopWrong = CurrentWrong - initialWrong;
+float stopTruth = CurrentTruth - initialTruth;
+
+scaleFactor = stopTruth / stopWrong;
+
+网友自己评论说：This works, within a margin of error, but is very manual. I am looking for a more automatic/iterative way to do this that will minimize the error as much as possible.
