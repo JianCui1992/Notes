@@ -28,3 +28,9 @@ scaleFactor = stopTruth / stopWrong;
 网友自己评论说：This works, within a margin of error, but is very manual. I am looking for a more automatic/iterative way to do this that will minimize the error as much as possible.
 
 其实这种方法和我在calmcar的尝试没什么区别。
+
+----------------------------------------------------------------------------------------------------------
+Scale Drift-Aware Large Scale Monocular SLAM 2012年发表  被引次数246（截至2017.12.22 冬至）
+这篇文章没什么用。
+
+----------------------------------------------------------------------------------------------------------
