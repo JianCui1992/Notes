@@ -27,7 +27,7 @@ Semi-Dense Visual Odometry for a Monocular Camera
     通过以上两步得到的逆深度估计将融合进深度图中。
 
 【2.1.1 参考帧的选择】
-    理想情况下，参考帧的
+    理想情况下，参考帧的选择标准是：使stereo accuracy最大，并保证disparity的搜索范围和观察角度足够小。由于stereo accuracy与很多因素有关，
 
 
 
