@@ -26,8 +26,8 @@ Semi-Dense Visual Odometry for a Monocular Camera
 2）对每个被选中的像素，各自选取合适的参考帧，并执行一维disparity搜索。传递的先验知识将用于缩小disparity搜索的范围，减少计算成本，去除伪极小值。
     通过以上两步得到的逆深度估计将融合进深度图中。
 
-
-
+【2.1.1 参考帧的选择】
+    理想情况下，参考帧的
 
 
 
