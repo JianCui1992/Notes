@@ -1,0 +1,9 @@
+Semi-Dense Visual Odometry for a Monocular Camera
+发表年份：2014
+被引次数：146（截至2017.12.22 冬至）
+作者机构：TUM
+
+看此文章的原因：CNN-SLAM中的参考文献【5】即为这篇文章。CNN-SLAM使用了该文章中small baseline stereo matching的方法。另外，从论文的实现方法和发表年份来看，这篇文章很可能是LSD-SLAM的前身。
+
+【摘要】
+    该方法的关键思想是：对当前帧持续估计其半稠密逆深度图，并将其用于稠密图像匹配法中，以此跟踪相机的运动。具体来说，我们估计图像中所有梯度不可忽略(non-negligible)的像素的深度值，
