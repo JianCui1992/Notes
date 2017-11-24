@@ -6,7 +6,7 @@ Semi-Dense Visual Odometry for a Monocular Camera
 看此文章的原因：CNN-SLAM中的参考文献【5】即为这篇文章。CNN-SLAM使用了该文章中small baseline stereo matching的方法。另外，从论文的实现方法和发表年份来看，这篇文章很可能是LSD-SLAM的前身。
 
 【摘要】
-    该方法的关键思想是：对当前帧持续估计其半稠密逆深度图，并将其用于稠密图像匹配法中，以此跟踪相机的运动。具体来说，我们估计图像中所有梯度不可忽略(non-negligible)的像素的深度值，并假设每个深度值的倒数（即：逆深度）都服从高斯分布。该深度图随时间由一帧传到下一帧，并在新的帧到来时用variable-baseline stereo comparisons更新深度图。我们显式地用像素深度的先验知识来选择合适的参考帧，并用该先验知识缩小disparity的搜索范围。
+    该方法的关键思想是：对当前帧持续估计其半稠密逆深度图，并将其用于稠密图像匹配法中，以此跟踪相机的运动。具体来说，我们估计图像中所有梯度不可忽略(non-negligible)的像素的深度值，并假设每个深度值的倒数（即：逆深度）都服从高斯分布。该深度图随时间由一帧传到另一帧，并在新的帧到来时用variable-baseline stereo comparisons更新深度图。我们显式地用像素深度的先验知识来选择合适的参考帧，并用该先验知识缩小disparity的搜索范围。
 
 【1.2 主要贡献】
     本文提出了一种新的半稠密单目VO方法，它不依赖于特征点。其中的关键概念有：
@@ -14,6 +14,62 @@ Semi-Dense Visual Odometry for a Monocular Camera
 2）基于整幅图匹配的跟踪
 3）the reduction on image-regions which carry information (semi-dense)
 4）立体估计的不确定性
+
+
+【2 半稠密深度图估计】
+    本文的关键思想之一就是对当前帧估计半稠密的深度图，它可用于估计相机在下一帧的位姿。该深度图将一帧帧不断地传下去，并通过新的立体深度估计(stereo depth measurements)更新。立体深度估计通过对每个像素进行自适应基线立体比较(adaptive-baseline stereo comparison)实现。通过这种方法，我们可以准确地估计远、近的区域。与通过一系列帧计算光度残差不同，对每个像素我们只保留一个逆深度假设，在这里我们将它假设为高斯分布。
+
+【2.1 基于立体视觉的深度图更新】
+    众所周知，对于立体视觉来说，精度和准确性是一对矛盾（如图3所示）。很多多基线立体视觉方法通过在多帧中累加相对代价函数来解决该问题，而我们提出了基于概率的方法，显式地利用了视频流中small-baseline frames are available before large-baseline frames这一事实。
+    每当加入新的帧，就会有一次full depth map update，该环节分为2步：
+1）选择图像中在disparity search中准确率明显很高的像素子集（a subset of pixels is selected for which the accuracy of a disparity search is sufficiently large）。在该步骤中我们用了3个准则，其推导过程详见2.1.3节。
+2）对每个被选中的像素，各自选取合适的参考帧，并执行一维disparity搜索。传递的先验知识将用于缩小disparity搜索的范围，减少计算成本，去除伪极小值。
+    通过以上两步得到的逆深度估计将融合进深度图中。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
