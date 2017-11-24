@@ -6,7 +6,7 @@ Semi-Dense Visual Odometry for a Monocular Camera
 看此文章的原因：CNN-SLAM中的参考文献【5】即为这篇文章。CNN-SLAM使用了该文章中small baseline stereo matching的方法。另外，从论文的实现方法和发表年份来看，这篇文章很可能是LSD-SLAM的前身。
 
 【摘要】
-    该方法的关键思想是：对当前帧持续估计其半稠密逆深度图，并将其用于稠密图像匹配法中，以此跟踪相机的运动。具体来说，我们估计图像中所有梯度不可忽略(non-negligible)的像素的深度值，并假设每个深度值的倒数（即：逆深度）都服从高斯分布。该信息随时间传播，并在新的帧到来时更新估计值。
+    该方法的关键思想是：对当前帧持续估计其半稠密逆深度图，并将其用于稠密图像匹配法中，以此跟踪相机的运动。具体来说，我们估计图像中所有梯度不可忽略(non-negligible)的像素的深度值，并假设每个深度值的倒数（即：逆深度）都服从高斯分布。该深度图随时间由一帧传到下一帧，并在新的帧到来时用variable-baseline stereo comparisons更新深度图。我们显式地用像素深度的先验知识来选择合适的参考帧，并用该先验知识缩小disparity的搜索范围。
 
 【1.2 主要贡献】
     本文提出了一种新的半稠密单目VO方法，它不依赖于特征点。其中的关键概念有：
@@ -15,4 +15,8 @@ Semi-Dense Visual Odometry for a Monocular Camera
 3）the reduction on image-regions which carry information (semi-dense)
 4）立体估计的不确定性
 
-【1.3 方法概述】
+
+
+
+
+
