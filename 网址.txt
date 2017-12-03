@@ -9,3 +9,18 @@ http://rosclub.cn/post-237.html
 
 DSO：
 https://vision.in.tum.de/research/vslam/dso
+
+如何研究视觉里程计？：SLAM的研究方向问题，非常值得一看。
+https://www.zhihu.com/question/59151308
+
+深度学习结合SLAM的研究思路/成果整理之（一）使用深度学习方法替换SLAM中的模块：
+http://blog.csdn.net/u010821666/article/details/78749356
+
+深度学习结合SLAM的研究思路/成果整理之（二）语义SLAM & 端到端：
+http://blog.csdn.net/u010821666/article/details/78793225
+
+阿里人工智能实验室也做SLAM研究，可给他发简历。张明明：
+https://www.zhihu.com/people/hitcm/activities
+
+百度深度学习实验室：
+http://idl.baidu.com/index.html
