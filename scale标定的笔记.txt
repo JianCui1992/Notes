@@ -2,3 +2,6 @@
 https://www.kudan.eu/kudan-news/scale-simultaneous-localisation-mapping/
 
 It is interesting to consider the difference between having a stereo camera and the situation in monocular SLAM where a single camera takes images from two locations, separated by time. One could argue that a monocular camera observing a static scene from two locations separated by some baseline would give exactly the same information as a stereo camera. Indeed, this is the case, assuming the distance the camera has moved is known: if the distance between the two camera positions is known this introduces a real scale reference just as in stereo.
+
+这篇文章没有太多建设性的proposal，针对单目SLAM，它提出了用已知尺度的物体标定来得到绝对尺度的方法。
+没有用速度传感器得到scale。
