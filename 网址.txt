@@ -1,0 +1,5 @@
+Scale in SLAM:
+https://www.kudan.eu/kudan-news/scale-simultaneous-localisation-mapping/
+
+Questions and answers
+https://robotics.stackexchange.com/questions/11743/scaling-monocular-slam-with-another-source
