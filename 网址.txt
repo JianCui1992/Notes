@@ -1,4 +1,4 @@
-Scale in SLAM:
+Scale in SLAM【没什么卵用】:
 https://www.kudan.eu/kudan-news/scale-simultaneous-localisation-mapping/
 
 Questions and answers
@@ -6,3 +6,6 @@ https://robotics.stackexchange.com/questions/11743/scaling-monocular-slam-with-a
 
 泡泡机器人讲解
 http://rosclub.cn/post-237.html
+
+DSO：
+https://vision.in.tum.de/research/vslam/dso
