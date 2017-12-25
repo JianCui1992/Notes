@@ -13,3 +13,10 @@ https://www.zhihu.com/people/hitcm/activities
     从研究上讲,其实研究VIO有点让人绝望,因为正如高博所说, 理论上的内容都比较固定了,但是实现起来的工程细节却很复杂. 这就导致了两个结果：
     第一, 很难提出理论上的创新.最近两年出了TUM的LSDSLAM 以及 DSO, 还有SVO作者的IMU preIntegration, 都是理论上很漂亮的工作,但这些工作的可能都是SLAM领域的大组在积累很长时间后才能做出来的; 
     第二, 即使有了理论创新可能工程细节上实现的不好,效果也出不来. 效果拔群的MSCKF也应该是一个实验室做了好几代才有了今天被各大厂采用的局面。
+
+
+深度学习结合SLAM的研究思路/成果整理之（一）使用深度学习方法替换SLAM中的模块：
+http://blog.csdn.net/u010821666/article/details/78749356
+
+深度学习结合SLAM的研究思路/成果整理之（二）语义SLAM & 端到端：
+http://blog.csdn.net/u010821666/article/details/78793225
