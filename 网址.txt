@@ -16,6 +16,8 @@ http://blog.csdn.net/u010821666/article/details/78749356
 深度学习结合SLAM的研究思路/成果整理之（二）语义SLAM & 端到端：
 http://blog.csdn.net/u010821666/article/details/78793225
 
+如何看待谷歌在 10 月 6 日开源的 SLAM 算法 cartographer？
+https://www.zhihu.com/question/51348391/answer/125560951
 
 ----------------------------------------------------
 泡泡机器人：
