@@ -67,5 +67,8 @@ http://blog.csdn.net/lancelot_vim/article/details/51730676
 阿里人工智能实验室也做SLAM研究，可给他发简历。张明明：
 https://www.zhihu.com/people/hitcm/activities
 
+张明明的Github：
+https://github.com/hitcm
+
 百度深度学习实验室：
 http://idl.baidu.com/index.html
