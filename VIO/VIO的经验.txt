@@ -17,3 +17,8 @@ https://www.zhihu.com/question/53571648/answer/137726592
 港科大的VINS：
 https://github.com/HKUST-Aerial-Robotics/VINS-Mono
 https://github.com/HKUST-Aerial-Robotics/VINS-Mobile
+
+ORB作者也根据他提出的ORB-SLAM自己研究了一个VIO，发表了论文。知乎上有个网友根据这篇论文编了个代码：
+https://github.com/jingpang/LearnVIORB
+
+
