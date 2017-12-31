@@ -7,3 +7,6 @@ http://www.iot-online.com/IC/tech/2017/052568712.html
 
 详解基于视觉+IMU的空间定位方法：
 http://itisar.com/?p=2382
+
+OKVIS中imu代码应用在ORB_SLAM2中的解读：
+http://blog.csdn.net/fk1174/article/details/61617447
