@@ -1,2 +1,10 @@
+不得不说，看印度人写的英文就是爽，就像看汉语一样流畅，比美国人和英国人写的易读多了。
+
 [1 引言]
     与传统特征提取方法提取特征描绘子不同，CNN可从图像中提取high-level的特征。受此启发，本文提出了一个基于深度学习的VO框架。利用CNN提取出的特征估算连续场景的位姿变换矩阵。本文的另一贡献是用单目视觉估计绝对尺度。由于训练网络可学习相机的内参和尺度，因此这种方法理论上具有可行性。
+
+[2 相关工作]
+    Optical flow between two images has been obtained by networks such as FlowNet [9] and EpicFlow [33]. Homography between two images have also been estimated using deep networks in [5].
+    Agrawal et al. [1] 在特征学习中用ego-motion向量作为弱监督信。为了推断出ego-motion，他们在训练过程中将整个问题当作一个分类问题，而与此相反的是，我们将VO估计当作一个回归问题(regression problem)。
+
+[3 方法论]
