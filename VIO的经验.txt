@@ -10,3 +10,6 @@ http://itisar.com/?p=2382
 
 OKVIS中imu代码应用在ORB_SLAM2中的解读：
 http://blog.csdn.net/fk1174/article/details/61617447
+
+有哪些开源项目是关于单目+imu做slam的？
+https://www.zhihu.com/question/53571648/answer/137726592
