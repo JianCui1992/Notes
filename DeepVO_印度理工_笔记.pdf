@@ -1,0 +1,18 @@
+Our work proposes a Deep Learning-based
+framework for analyzing the problem of visual
+odometry, motivated from the observation that
+instead of geometric feature descriptors, CNNs
+can be used to extract high-level features from
+images. Using these features, we estimate the
+transformation matrix between two consecutive
+scenes to recreate the vehicle’s trajectory. Another
+significant contribution of this paper is using only
+monocular vision to estimate the vehicle’s position
+in true scale, which cannot be done solely by pure
+geometry based methods. This is possible since
+the training network is able to learn the cam-
+era intrinsic parameters and scale. We hope that
+this framework will open up further research into
+the associated fields of Simultaneous Localization
+and Mapping (SLAM) and Structure from Motion
+(SFM) as well.
