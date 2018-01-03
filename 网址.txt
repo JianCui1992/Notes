@@ -32,11 +32,14 @@ http://www.sohu.com/a/166136329_715754
 单目语义SLAM（上）
 http://www.sohu.com/a/148032089_715754
 
+DeMoN：深度与运动估计的网络学习
+http://blog.csdn.net/cicibabe/article/details/72575972
 
+LSD-SLAM深入学习（2）-算法解析
+https://www.cnblogs.com/hitcm/p/4907536.html
 
-
-
-
+lsd-slam源码解读第三篇:算法解析
+http://blog.csdn.net/lancelot_vim/article/details/51730676
 
 
 
