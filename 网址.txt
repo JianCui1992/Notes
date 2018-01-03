@@ -23,10 +23,14 @@ http://blog.csdn.net/u010821666/article/details/78793225
 泡泡机器人讲解
 http://rosclub.cn/post-237.html
 
+泡泡机器人微信号：
+http://mp.sohu.com/profile?xpt=cGFvcGFvcm9ib3Rfc2xhbUBzb2h1LmNvbQ==&_f=index_pagemp_2
 
+LSD-SLAM : 基于直接法的大范围单目即时定位和地图构建方法
+http://www.sohu.com/a/166136329_715754
 
-
-
+单目语义SLAM（上）
+http://www.sohu.com/a/148032089_715754
 
 ----------------------------------------------------
 阿里人工智能实验室也做SLAM研究，可给他发简历。张明明：
