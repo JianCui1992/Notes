@@ -3,13 +3,15 @@
     从研究上讲,其实研究VIO有点让人绝望。因为正如高博所说, 理论都比较固定了,但实现的工程细节却很复杂. 这就导致了两个结果：
     第一, 很难提出理论上的创新。最近出了TUM的LSD-SLAM 以及DSO, 还有SVO作者的IMU preIntegration, 都是理论上很漂亮的工作,但这些工作可能都是SLAM领域的大组在积累很长时间后才能做出来的。
     第二, 即使有了理论创新，可能工程细节上实现的不好,效果也出不来。效果拔群的MSCKF也应该是一个实验室做了好几代才有了今天被各大厂采用的局面。
+    因此，相比于理论和算法的研究，VIO可能更具有工程实现上的价值和意义。把它当成成熟的框架来用，把VIO输出的结果当成ground truth，然后主要的精力放在研究SLAM和机器学习结合的地方，这样更容易出研究成果。SLAM和机器学习的结合是个既定的趋势，也有很多未开拓的领域。
+
 
 VIO的分类：基于滤波的 和 基于优化的；松耦合 和 紧耦合
 计算量由小到大排序：
 滤波+松耦合		状态向量～20维		复杂度为常数
 滤波+紧耦合		状态向量～2000维	复杂度为M×M
 优化+松耦合							计算量较大		效果一般	研究较少
-优化+紧耦合							计算量最大		效果较好	OKVIS
+优化+紧耦合							计算量最大		效果较好	OKVIS  VINS
 
 用车速做scale标定的过程可借鉴VIO的框架，两者本质是一致的。
 
@@ -30,8 +32,10 @@ https://www.zhihu.com/question/53571648/answer/137726592
 https://github.com/HKUST-Aerial-Robotics/VINS-Mono
 https://github.com/HKUST-Aerial-Robotics/VINS-Mobile
 
-ORB作者也根据他提出的ORB-SLAM自己研究了一个VIO，发表了论文。知乎上有个网友根据这篇论文编了个代码：
+ORB作者也根据他提出的ORB-SLAM自己研究了一个VIO，发表了论文。知乎上有个网友(jingpang)根据这篇论文编了个代码：
 https://github.com/jingpang/LearnVIORB
 
+以及根据jingpang的代码改编的版本：
+https://github.com/RomaTeng/ORB-VINS_RK4
 --------------------------------------------------------
 
