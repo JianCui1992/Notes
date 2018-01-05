@@ -1,0 +1,2 @@
+VINS-Mono源码解析（三）后端: IMU预积分
+http://m.blog.csdn.net/q597967420/article/details/76099429
