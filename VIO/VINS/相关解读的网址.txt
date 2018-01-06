@@ -15,3 +15,6 @@ http://blog.csdn.net/wangshuailpp/article/details/78719593
 
 VINS-Mono源码解析（三）后端: IMU预积分
 http://m.blog.csdn.net/q597967420/article/details/76099429
+
+VINS-Mono代码分析与总结(一) IMU预积分
+http://www.cnblogs.com/buxiaoyi/p/7353353.html#[2]
