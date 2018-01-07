@@ -1,1 +1,3 @@
 VINS大概需要十秒左右，ORB_SLAM2结合IMU的时间设定在15秒完成初始化。
+
+rosbag将记录好的imu数据和单目相机获取的图像数据分别发布到/imu0和/cam0/image_raw话题；/feature_tracker节点通过订阅/cam0/image_raw话题获取图像数据，/vins_estimator节点通过订阅/imu0话题获取imu数据，同时/feature_tracker节点将提取出的图像特征发布到/feature_tracker/feature话题，由/vins_estimator订阅获取。因此，/feature_tracker节点负责视觉提取和跟踪，/vins_estimator则是融合系统的主要部分。
