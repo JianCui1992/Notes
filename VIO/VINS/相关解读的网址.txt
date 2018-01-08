@@ -1,2 +1,17 @@
+VINS理论与代码详解1——框架解析
+http://blog.csdn.net/wangshuailpp/article/details/78719363
+
+VINS理论与代码详解2——单目视觉跟踪
+http://blog.csdn.net/wangshuailpp/article/details/78719401
+
+VINS理论与代码详解3——IMU预积分
+http://blog.csdn.net/wangshuailpp/article/details/78719438
+
+VINS理论与代码详解4——初始化
+http://blog.csdn.net/wangshuailpp/article/details/78719531
+
+VINS理论与代码详解5——基于滑动窗口的单目视觉紧耦合后端优化模型
+http://blog.csdn.net/wangshuailpp/article/details/78719593
+
 VINS-Mono源码解析（三）后端: IMU预积分
 http://m.blog.csdn.net/q597967420/article/details/76099429
