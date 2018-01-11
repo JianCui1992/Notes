@@ -1,2 +1,6 @@
-目前，提出的思路是
+目前，提出的思路是：
+1) 在初始化阶段：同时进行ORB-SLAM和VINS的初始化，初始化完成后分别得到对应的尺度s1，s2。然后用VINS的尺度s2修正ORB-SLAM，使ORB-SLAM得到绝对尺度。
+2) 在尺度修正后，正常的tracking部分仍使用ORB-SLAM。
+
+目前，尺度修正的思路和这篇帖子的做法相同：
 https://robotics.stackexchange.com/questions/11743/scaling-monocular-slam-with-another-source
