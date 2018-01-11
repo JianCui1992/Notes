@@ -1,0 +1,2 @@
+目前，提出的思路是
+https://robotics.stackexchange.com/questions/11743/scaling-monocular-slam-with-another-source
