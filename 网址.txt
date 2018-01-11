@@ -13,10 +13,8 @@ http://blog.csdn.net/u010821666/article/details/78793225
 如何看待谷歌在 10 月 6 日开源的 SLAM 算法 cartographer？
 https://www.zhihu.com/question/51348391/answer/125560951
 
-----------------------------------------------------
-泡泡机器人：
-
-泡泡机器人讲解
+------------------泡泡机器人-------------------
+泡泡机器人公开课
 http://rosclub.cn/post-237.html
 
 泡泡机器人微信号：
