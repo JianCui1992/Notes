@@ -65,6 +65,3 @@ Pohlen T, Hermans A, Mathias M, et al. Full-Resolution Residual Networks for Sem
 
 
 
-
-
-
