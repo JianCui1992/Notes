@@ -35,7 +35,8 @@ https://www.cnblogs.com/hitcm/p/4907536.html
 lsd-slam源码解读第三篇:算法解析
 http://blog.csdn.net/lancelot_vim/article/details/51730676
 
-
+深度学习中文版github网址，目测非常好
+https://github.com/exacity/deeplearningbook-chinese
 
 
 
